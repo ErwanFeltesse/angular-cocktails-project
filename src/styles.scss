@@ -63,6 +63,9 @@ body {
 .flex-fill {
   flex: 1 1 auto;
 }
+.flex-50 {
+  flex: 1 1 50%;
+}
 
 //utils
 
@@ -71,6 +74,12 @@ body {
 }
 .p-20 {
   padding: 20px;
+}
+.pr-10 {
+  padding-right: 10px;
+}
+.pl-10 {
+  padding-left: 10px;
 }
 .m-10 {
   margin: 10px;
