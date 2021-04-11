@@ -17,7 +17,8 @@ export class CocktailContainerComponent implements OnInit {
     },
     {
       name: 'Cosmopolitan',
-      img: 'https://www.hangoverweekends.co',
+      img:
+        'https://www.hangoverweekends.co.uk/media/15507/gallery-1430408520-dmg-cosmopolitan-cocktail-001.jpg?width=330px&height=407px',
       description:
         'The tangy concoction of vodka, triple sec, lime juice and cranberry juice has managed to leapfrog the venerable screwdriver as many vodka drinkers prefer the Cosmopolitan’s cleaner and slightly tart taste. The keys to the preparation of a Cosmopolitan are a good brand of cranberry juice and Cointreau Triple Sec, two essential elements to the drink.',
     },
@@ -35,5 +36,8 @@ export class CocktailContainerComponent implements OnInit {
 
   ngOnInit(): void {
     this.selectedCocktail = this.cocktails[0];
+  }
+  public selectCocktail(index: number): void {
+    this.selectedCocktail = this.cocktails[index];
   }
 }
